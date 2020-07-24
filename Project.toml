@@ -1,0 +1,30 @@
+name = "SingleLineFonts"
+uuid = "bcf3f819-ef0c-4e0a-904c-ac2eea82d9f5"
+version = "0.1.0"
+
+[deps]
+Requires = "ae029012-a4dd-5104-9daa-d747884805df"
+UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+
+[weakdeps]
+FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
+Graphics = "a2bd30eb-e257-5431-a919-1863eab51364"
+UUIDs = "cf7118a7-6976-5b1a-9a39-7adc72f591a4"
+
+[extensions]
+SingleLineFontsFileIOExt = ["FileIO", "UUIDs"]
+SingleLineFontsGraphicExt = "Graphics"
+
+[compat]
+FileIO = "1"
+Graphics = "1"
+Requires = "1"
+julia = "1"
+
+[extras]
+FileIO = "5789e2e9-d7fb-5bc7-8068-2c6fae9b9549"
+Graphics = "a2bd30eb-e257-5431-a919-1863eab51364"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["FileIO", "Graphics", "Test"]
